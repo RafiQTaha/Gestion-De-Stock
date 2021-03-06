@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #101010;
+  max-height: : 100vh;
+}
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 30px;
+  width: 40%;
+  background-color: #777;
+  display: flex;
+  flex-direction: column;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.5);
+  transition: all .5s;
+}
+.form h1{
+  text-align: center;
+}
+@media only screen and (max-width: 950px) {
+  .form{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .form{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form{
+    color: #fff;
+    background-color: transparent;
+    box-shadow: none;
+    width: 95%;
+    height: 100%;
+  }
+  .form h1{
+    margin-bottom: 60px;
+  }
+}
